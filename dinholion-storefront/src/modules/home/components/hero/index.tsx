@@ -24,7 +24,7 @@ const Hero = () => {
           target="_blank"
         >
           <Button variant="secondary">
-            View on GitHub
+            RESERVER VOTRE CHAUFFEUR
             <Github />
           </Button>
         </a>
