@@ -100,7 +100,7 @@ const CartDropdown = ({
             data-testid="nav-cart-dropdown"
           >
             <div className="p-4 flex items-center justify-center">
-              <h3 className="text-large-semi">Cart</h3>
+              <h3 className="text-large-semi">Votre panier</h3>
             </div>
             {cartState && cartState.items?.length ? (
               <>
@@ -159,7 +159,7 @@ const CartDropdown = ({
                             className="mt-1"
                             data-testid="cart-item-remove-button"
                           >
-                            Remove
+                            Retiré
                           </DeleteButton>
                         </div>
                       </div>
@@ -189,7 +189,7 @@ const CartDropdown = ({
                       size="large"
                       data-testid="go-to-cart-button"
                     >
-                      Go to cart
+                      Voir le panier
                     </Button>
                   </LocalizedClientLink>
                 </div>
@@ -200,11 +200,11 @@ const CartDropdown = ({
                   <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
                     <span>0</span>
                   </div>
-                  <span>Your shopping bag is empty.</span>
+                  <span>Votre panier est vide.</span>
                   <div>
                     <LocalizedClientLink href="/store">
                       <>
-                        <span className="sr-only">Go to all products page</span>
+                        <span className="sr-only">Voir nos services. page</span>
                         <Button onClick={close}>Explore products</Button>
                       </>
                     </LocalizedClientLink>
