@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Popover, Transition } from "@headlessui/react"
@@ -10,11 +11,11 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import CountrySelect from "../country-select"
 
 const SideMenuItems = {
-  Home: "/",
-  Store: "/store",
+  Accueil: "/",
+  Services: "/store",
+  Compte: "/account",
+  Panier: "/cart",
   Search: "/search",
-  Account: "/account",
-  Cart: "/cart",
 }
 
 const SideMenu = ({ regions }: { regions: Region[] | null }) => {
@@ -85,7 +86,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
+                        © {new Date().getFullYear()} DINHO LION VTC. All rights
                         reserved.
                       </Text>
                     </div>
